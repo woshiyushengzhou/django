@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <title>搜索结果</title>
+    </head>
+    <body>
+        <ul>
+        {% for book in books %}
+        <li> {{book.title}}</li>
+        {% endfor %}
+        </ul>
+    </body>
+</html>

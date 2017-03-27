@@ -15,7 +15,13 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-
+from books import views
 urlpatterns = [
+    url(r'^$',views.first_page),
     url(r'^admin/', admin.site.urls),
+    url(r'dissearch/$',views.display_search_form),
+    url(r'^search/$',views.search),
+    url(r'^template/$',views.template_page),
+    url(r'^contact/$',views.contact),
+    url(r'^contact/success/$',views.success)
 ]
